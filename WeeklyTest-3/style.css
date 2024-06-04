@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.offer{
+    background-image: linear-gradient(to right, rgb(20, 22, 23), rgb(217, 81, 67));
+}
+.offer h4{ 
+    color: rgb(245, 241, 241);
+    text-align: center;
+    padding: 12px 0;
+}
+
+nav{
+    position: sticky;
+    z-index: 1;
+    top:0;
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    /* border: 2px solid pink; */
+    justify-content: center;
+    align-items: center;
+    padding:15px 0;
+}
+nav h5,input{
+    padding: 0 20px;
+}
+nav input[type=text]{
+    padding: 2px 100px;
+    outline: none;
+}
+
+.section-1{
+   height: 300px;
+    width: 100%;
+    background-image: url(https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-superJumbo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.sec-1_sub{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* border: 2px solid yellowgreen; */
+    width: 54%;
+    position: relative;
+    top: 59px;
+    left: 100px;
+    padding: 22px;
+    font-size: 18px;
+}
+
+.section-2{
+    background-color: rgb(222, 233, 233);
+    width: 100%;
+    height: 300px;
+    /* border: 5px solid green; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.sec-2_sub{
+    width: 85%;
+    height: 80%;
+    background-color: rgba(20, 22, 23, 0.3);
+    /* border: 3px solid rgb(0, 43, 128); */
+    display: flex;
+    position: relative;
+    left: 100px;
+}
+.sec-2_sub h1{
+    position: absolute;
+}
+.shoe {
+    background-color: rgba(20, 22, 23, 0.4);
+    color: rgb(236, 234, 231);
+    height: 150px;
+    width: 120px;
+    /* border: 2px solid rgb(128, 0, 15); */
+    margin-top: 50px;
+    margin-left: 6px;
+}
+.shoe > img{
+    width: 100%;
+    height: 80%;
+    
+}
+.shoe > p{
+    text-align:center;
+    
+}
+
+.section-3{
+    background: linear-gradient(to left, #000000, #434343);
+    width: 100%;
+    height: 100vh;
+}
+
+.sec-3_sub{
+    background:linear-gradient(to right, rgb(0, 0, 0), rgb(183, 103, 94));
+    box-shadow: 2px 1px 5px 2px #7e6565;
+    color: aliceblue;
+    position: relative;
+    width: 85%;
+    height: 70%;
+    /* border: 2px solid red; */
+    display: flex;
+    top: 90px;
+    left: 95px;
+}
+.sec-3_sub h1{
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    font-size: 2em;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 55px;
+}
+.para{
+    /* border: 2px solid gray; */
+    padding: 0px 25px;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+}
+.para p{
+    margin: 26px 0;
+    font-size: larger;
+
+}
+.display img{
+    /* border: 2px solid greenyellow; */
+    border-radius: 50%;
+    margin-right: 55px;
+    width:300px; 
+    height:300px;
+    box-shadow: 8px 8px 8px white;
+}
+.display img:hover{
+    /* border: 2px solid greenyellow; */
+    border-radius: 50%;
+    width:400px; 
+    height:400px;
+    box-shadow: 8px 8px 8px white;
+}
