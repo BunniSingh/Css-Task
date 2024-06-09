@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(204 193 186 / 75%);
+    background: linear-gradient(130deg, #f05a24 5%, #3a3d8d 70%);
     height: 100vh;
 }
 .container{
@@ -27,14 +27,17 @@ body{
 img{
     /* border:2px solid gray; */
     position: absolute;
-    top: 7%;
-    right: 0;
-    width: 600px;
+    top: 10%;
+    right: 40px;
+    width: 400px;
     height: 300px;
+    transform: scaleX(-1);
+    transition: transform 0.5s ease-in-out;
 }
+
 img:hover{
-    right: 0;
-    width: 900px;
-    height: 600px;
-    z-index: 1;
+    width: 500px;
+    height: 350px;
+    /* z-index: 1; */
+    transform: scale(1);
 }
