@@ -14,24 +14,32 @@
     <div class="header">
       <div class="header_left">
         <i class="material-icons">menu</i>
-        <img
-          src="Youtube-Logo-Vector.svg"
-          alt="YouTube Logo"
-        />
+        <img src="Youtube-Logo-Vector.svg" alt="YouTube Logo" />
       </div>
       <div class="header_search">
         <form action="">
-          <input type="text" placeholder="Search" />
-          <button type="submit">
+          <input id="search" type="text" placeholder="Search" />
+          <button class="search-btn" type="submit">
             <i class="material-icons">search</i>
           </button>
         </form>
+        <button class="mic-btn" type="submit">
+          <i class="material-icons">mic</i>
+        </button>
       </div>
-      <div class="header_icons">
-        <i class="material-icons">videocam</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">notifications</i>
-        <i class="material-icons">account_circle</i>
+      <div class="header_right">
+        <button class="header-right-btn">
+          <i class="material-icons">videocam</i>
+        </button>
+        <button class="header-right-btn">
+          <i class="material-icons">apps</i>
+        </button>
+        <button class="header-right-btn">
+          <i class="material-icons">notifications</i>
+        </button>
+        <button class="header-right-btn">
+          <i class="material-icons">account_circle</i>
+        </button>
       </div>
     </div>
     <!-- <hr> -->
@@ -87,9 +95,9 @@
             <span>Downloads</span>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="sidebar-categories">
-          <h3 class="sidebr-h3">Explore </h3>
+          <h3 class="sidebr-h3">Explore</h3>
           <div class="sidebar-category">
             <i class="material-icons">local_fire_department</i>
             <span>Trending</span>
@@ -135,317 +143,590 @@
             <span>Podcasts</span>
           </div>
         </div>
-
       </div>
       <div class="videos">
-        <h2>Recommended</h2>
+        <div class="suggesion">
+          <h4>All</h4>
+          <h4>Music</h4>
+          <h4>Live</h4>
+          <h4>News</h4>
+          <h4>JavaScript</h4>
+          <h4>Data Structures</h4>
+          <h4>Playlist</h4>
+          <h4>Reverberation</h4>
+          <h4>Mixes</h4>
+          <!-- <h4>Jukebox</h4>
+          <h4>Thrillers</h4> -->
+          <h4>CssWithBunny</h4>
+          <h4>More ></h4>
+        </div>
         <div class="video-container">
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://youtu.be/Viccu8N9NLg" target="_blank"><img src="https://i.ytimg.com/vi/B0qAKvjH2kg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3pUdwE2ZQ91GBQQyMIN57s5r9QA" alt="fluite-img"></a>
+              <a href="https://youtu.be/Viccu8N9NLg" target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/B0qAKvjH2kg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3pUdwE2ZQ91GBQQyMIN57s5r9QA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="./channels4_profile.jpg" alt="bunny-icon">
+                <img src="./channels4_profile.jpg" alt="bunny-icon" />
               </div>
               <div class="title">
-                <h3>Krishna Lofi Songs 3.0 | Slow & Reverb | The Sound Of Inner Peace | Relaxing Lofi Song</h3>
-                <a href="https://www.youtube.com/@krishnaforlife" target="_blank">Krishna for Life</a>
-                <span><b style="color: black;">10M views</b> in 1 year</span>
+                <h3>
+                  Krishna Lofi Songs 3.0 | Slow & Reverb | The Sound Of Inner
+                  Peace | Relaxing Lofi Song
+                </h3>
+                <a
+                  href="https://www.youtube.com/@krishnaforlife"
+                  target="_blank"
+                  >Krishna for Life</a
+                >
+                <span><b style="color: black">10M views</b> in 1 year</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/shorts/grvMYSRf2AE" target="_blank"><img src="https://i.ytimg.com/vi/RjsRFTJIMAE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBspu_P4ni6h1SMn_nTaGCh5lXTCg" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/shorts/grvMYSRf2AE"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/RjsRFTJIMAE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBspu_P4ni6h1SMn_nTaGCh5lXTCg"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="Anni.jpg" alt="anni-icon">
+                <img src="Anni.jpg" alt="anni-icon" />
               </div>
               <div class="title">
-                <h3>Train Journey Uttrakhand to Bihar | Slow & Speedup | Place | Lestening song</h3>
-                <a href="https://www.youtube.com/@anjalisingh2536" target="_blank">Anjali Singh</a>
-                <span><b style="color: black;">34k views</b> in 6 week</span>
+                <h3>
+                  Train Journey Uttrakhand to Bihar | Slow & Speedup | Place |
+                  Lestening song
+                </h3>
+                <a
+                  href="https://www.youtube.com/@anjalisingh2536"
+                  target="_blank"
+                  >Anjali Singh</a
+                >
+                <span><b style="color: black">34k views</b> in 6 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=deztUdPApiM" target="_blank"><img src="https://i.ytimg.com/vi/deztUdPApiM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCl2SNNZbligqiD3SodauyyTs31Cg" alt="top-progrming-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=deztUdPApiM"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/deztUdPApiM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCl2SNNZbligqiD3SodauyyTs31Cg"
+                  alt="top-progrming-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.ggpht.com/00yIYVKjmFvR7sFZXmP5aMq1u0P7ZcLfnDW27A7zRD1hTqcWLwYn0-o_5rGkK2eKfCf43ueE7Q=s176-c-k-c0x00ffffff-no-rj-mo" alt="apna-college-icon">
+                <img
+                  src="https://yt3.ggpht.com/00yIYVKjmFvR7sFZXmP5aMq1u0P7ZcLfnDW27A7zRD1hTqcWLwYn0-o_5rGkK2eKfCf43ueE7Q=s176-c-k-c0x00ffffff-no-rj-mo"
+                  alt="apna-college-icon"
+                />
               </div>
               <div class="title">
-                <h3>Which Coding Language should you start with in 2024? For Beginners</h3>
-                <a href="https://www.youtube.com/@ApnaCollegeOfficial" target="_blank">Apna College</a>
-                <span><b style="color: black;">2M views</b> in 2 year</span>
+                <h3>
+                  Which Coding Language should you start with in 2024? For
+                  Beginners
+                </h3>
+                <a
+                  href="https://www.youtube.com/@ApnaCollegeOfficial"
+                  target="_blank"
+                  >Apna College</a
+                >
+                <span><b style="color: black">2M views</b> in 2 year</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=hhnqxrM-HyE" target="_blank"><img src="https://i.ytimg.com/vi/hhnqxrM-HyE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC07_ZDVDNmy3Xgs3Zy_Ht-ShjAvg" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=hhnqxrM-HyE"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/hhnqxrM-HyE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC07_ZDVDNmy3Xgs3Zy_Ht-ShjAvg"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/ytc/AIdro_mcbMCiizh7MltA-xuMq0ixNziAMUigqlVnqXZND_qrets=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/ytc/AIdro_mcbMCiizh7MltA-xuMq0ixNziAMUigqlVnqXZND_qrets=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Birthday Countdown App Using Javascript | JavaScript Projects</h3>
-                <a href="https://www.youtube.com/@TechinfoYT" target="_blank">Techinfo YT</a>
-                <span><b style="color: black;">642 views</b> in  Day</span>
+                <h3>
+                  Birthday Countdown App Using Javascript | JavaScript Projects
+                </h3>
+                <a href="https://www.youtube.com/@TechinfoYT" target="_blank"
+                  >Techinfo YT</a
+                >
+                <span><b style="color: black">642 views</b> in Day</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://youtu.be/JeaX4SaJcJE" target="_blank"><img src="https://i.ytimg.com/vi/JeaX4SaJcJE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7ZfKUe3N-9DedsHNXAdAle4KDKg" alt="fluite-img"></a>
+              <a href="https://youtu.be/JeaX4SaJcJE" target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/JeaX4SaJcJE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7ZfKUe3N-9DedsHNXAdAle4KDKg"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/v7l2R0EwlXkvJDiMMNKaFpCKox2LECGLJIxUL5Ng8pq9HW4cy71N3l1XkAemLRXjAss31exdATs=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/v7l2R0EwlXkvJDiMMNKaFpCKox2LECGLJIxUL5Ng8pq9HW4cy71N3l1XkAemLRXjAss31exdATs=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Chill Vibes Live 🍂 Chill songs when you want to feel motivated and relaxed ~ English songs</h3>
-                <a href="https://www.youtube.com/@chillvibesplaylist" target="_blank">Chill Vibes
+                <h3>
+                  Chill Vibes Live 🍂 Chill songs when you want to feel
+                  motivated and relaxed ~ English songs
+                </h3>
+                <a
+                  href="https://www.youtube.com/@chillvibesplaylist"
+                  target="_blank"
+                  >Chill Vibes
                 </a>
-                <span><b style="color: black;">10M views</b> in 1 year</span>
+                <span><b style="color: black">10M views</b> in 1 year</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="video">
-            <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
-            </div>
-            <div class="video-details">
-              <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
-              </div>
-              <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
           <div class="video">
             <div class="video-thumbnail">
-                <a href="https://www.youtube.com/watch?v=9N3cFoLFjvw" target="_blank"><img src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA" alt="fluite-img"></a>
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
             </div>
             <div class="video-details">
               <div class="author">
-                <img src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj" alt="bunny-icon">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
               </div>
               <div class="title">
-                <h3>Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena Gupta, Raghubir Yadav | May 28</h3>
-                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank">Prime Video India</a>
-                <span><b style="color: black;">21M views</b> in 3 week</span>
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
               </div>
             </div>
           </div>
 
+          <div class="video">
+            <div class="video-thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=9N3cFoLFjvw"
+                target="_blank"
+                ><img
+                  src="https://i.ytimg.com/vi/9N3cFoLFjvw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPZAE23gT8Qb0gbLnthQtuBsuDQA"
+                  alt="fluite-img"
+              /></a>
+            </div>
+            <div class="video-details">
+              <div class="author">
+                <img
+                  src="https://yt3.googleusercontent.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s160-c-k-c0x00ffffff-no-rj"
+                  alt="bunny-icon"
+                />
+              </div>
+              <div class="title">
+                <h3>
+                  Panchayat Season 3 - Official Trailer | Jitendra Kumar, Neena
+                  Gupta, Raghubir Yadav | May 28
+                </h3>
+                <a href="https://www.youtube.com/@PrimeVideoIN" target="_blank"
+                  >Prime Video India</a
+                >
+                <span><b style="color: black">21M views</b> in 3 week</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
