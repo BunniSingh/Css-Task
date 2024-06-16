@@ -212,7 +212,7 @@ nav .logo img{
     transition: transform 0.7s ease-in-out;
 }
 
-.item:hover{
+.item:hover{    
     transform: scale(1.08)
 }
 
