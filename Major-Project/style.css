@@ -78,8 +78,9 @@ nav a:hover{
 }
 
 
-.home{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),  url("./assets/header-background.jpg") ;
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url("./assets/header-background.jpg");
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -90,99 +91,182 @@ nav a:hover{
     text-align: center;
     color: white;
     /* gap: 0rem; */
-    
-}
-
-.home h1{
+  }
+  
+  
+  .home h1 {
     text-transform: uppercase;
+    margin: 0;
     font-size: 4rem;
-}
-
-.home p{
+  }
+  
+  .home p {
     font-size: 1.5rem;
     width: 60%;
-}
-
-button{
+  }
+  
+  button {
     cursor: pointer;
-    padding: 1rem 2rem;
+    border: 1px solid #14bf98;
     background-color: #14bf98;
     color: white;
-    border: 2px solid #14bf98;
     text-transform: uppercase;
+    padding: 1rem 2rem;
     border-radius: 5px;
+    transition: all 0.7s ease-in-out;
     font-weight: 700;
     font-size: 0.75rem;
-    transition: 1s;
-}
-
-button:hover{
+    margin-top: 20px;
+  }
+  
+  button:hover {
     background-color: transparent;
     color: #14bf98;
-    
-}
-
-.intro{
+  }
+  
+  
+  /* intro */
+  
+  .intro{
     display: flex;
     justify-content: center;
-    /* margin: 10vh 7vh; */
+    margin: 10vh 7vh;
     gap: 50px;
-}
-
+  }
+  
+  
 .intro div{
-    width: 50vh;
+    height: 50vh;
     width: 500px;
     overflow: hidden;
 }
 
 .intro-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.intro h5{
- font-weight: 500;
+.intro h5 {
+  text-transform: uppercase;
+  color: #14bf98;
+  font-weight: 500;
 }
-
 
 .intro div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .intro div img:hover{
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-/* sub-intro */
+/* sub intro */
 
 .sub-intro{
-    display: flex;
-    justify-content: space-evenly;
-    /* gap: 20px; */
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 50px; */
+  flex-wrap: wrap;
+  margin: 10vh 7vh;
 }
 
-.sub-intro div{
-    width: 200px;
+.sub-intro>div{
+  /* width: 300px; */
+  width: 200px;
+  /* border: 10px solid blue; */
 }
 
 .hexagon{
-    position: relative;
+  position: relative;
 }
 
-.hexagon img{
-    width: 100px;
-    height: 100px;
+.hexagon>img{
+  width: 100px;
+  height: 100px;
 }
 
-.hexagon i{
-    position: absolute;
-    left: 33px;
-    top: 33;
-    color: white;
+.hexagon>i{
+  position: absolute;
+  top: 33px;
+  left:33px;
+  font-size: 30px;
+  color: white;
+}
+
+
+/* services */
+
+.services h3,h6 {
+  text-transform: uppercase;
+  color: #14bf98;
+  font-weight: 500;
+  text-align: center;
+}
+
+.services h3{
+  color: #484a46;
+  font-weight: 800;
+}
+
+.services .service-list-container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.services .service-list-container .service-item{
+  width: 20%;
+  /* height: 70vh; */
+  border: 1px solid #484a46;
+  margin-bottom: 100px;
+  
+}
+
+.services .service-list-container .service-item img{
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services .service-list-container .service-item h4{
+  margin: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #484a46;
+  font-weight: 800;
+}
+
+.services .service-list-container .service-item p{
+  margin: 10px;
+  text-align: center;
+  /* font-size: 1rem; */
+  color: #14bf98;
+  /* font-weight: 800; */
+}
+
+.services .service-list-container .service-item ul{
+  margin: 10px;
+  text-align: center;
+  line-height: 2rem;
+  /* font-size: 1rem; */
+  color: #14bf98;
+  list-style: none;
+}
+
+.services .service-list-container .service-item ul li:before{
+  
+  content : "\25a0";
+  margin: 5px;
+}
+
+.services .service-list-container .service-item button{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,50%);
 }
